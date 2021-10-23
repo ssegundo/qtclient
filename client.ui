@@ -16,8 +16,8 @@
   <widget class="QLineEdit" name="lEdt_ip">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>70</y>
+     <x>150</x>
+     <y>80</y>
      <width>113</width>
      <height>21</height>
     </rect>
@@ -26,8 +26,8 @@
   <widget class="QLineEdit" name="lEdt_port">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>130</y>
+     <x>150</x>
+     <y>120</y>
      <width>113</width>
      <height>21</height>
     </rect>
@@ -37,7 +37,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>200</y>
+     <y>180</y>
      <width>80</width>
      <height>21</height>
     </rect>
@@ -49,8 +49,8 @@
   <widget class="QPushButton" name="pBtn_Close">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>200</y>
+     <x>260</x>
+     <y>180</y>
      <width>80</width>
      <height>21</height>
     </rect>
