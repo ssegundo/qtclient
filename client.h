@@ -18,12 +18,18 @@ public:
     ~Client();
 
     void requestMessage();
-    void readMessage();
     void showError();
 
+private slots:
+    void readMessage();
+
 private:
+    //Interfaz del GUI
     Ui::Client *ui;
+    // variable socket cliente
     QTcpSocket *clientSocket = nullptr;
-    //QDebug *q=nullptr;
+    // canal
+    QDataStream in;
+
 };
 #endif // CLIENT_H
