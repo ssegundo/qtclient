@@ -6,6 +6,10 @@ Client::Client(QWidget *parent) //constructor
     , ui(new Ui::Client)
 {
     ui->setupUi(this);
+    //instaciar socket
+    clientSocket = new QTcpSocket(this);
+    //inicializando el datastream (canal)
+    in.setDevice(clientSocket);
     connect(ui->pBtn_Close, &QAbstractButton::clicked, this, &QWidget::close);
     // Procesar datos recibidos
     connect(clientSocket, &QIODevice::readyRead, this, &Client::readMessage);
